@@ -1,5 +1,6 @@
-const func = (a, b) => {
-    return a + b;
-}
+import React from 'react';
+import { render } from 'react-dom';
+import App from './App';
+import './css/main.scss';
 
-alert(func(3, 5));
+render(<App />, document.getElementById('app'));
