@@ -1,11 +1,13 @@
 // RocketSeat - Projeto 01
 
 // Cores
-$cor-cinza-padrao: #eaebee;
-$cor-cinza-escuro: #333;
-$cor-azul-header: #4267b2;
-$cor-bordas: #ccc;
+$cor-cinza-padrao: #E9EBEE;
+$cinza-padao-subitulos: #666;
+$cor-cinza-conteudo: #333;
+$cor-azul-header: #4267B2;
+$cor-bordas: #eee;
 $cor-branca: white;
+$cor-bordas-header: #4267B2;
 
 html, body{
   padding:0px; margin:0px;
@@ -22,6 +24,7 @@ header{
   padding: 30px auto auto auto;
   display:block;
   background:$cor-azul-header;
+  border-bottom: 1px solid $cor-bordas-header;
 
     h1{
       margin:15px auto auto auto;
@@ -31,7 +34,7 @@ header{
       text-align: center;
       color: $cor-branca;
       font-family: sans-serif;
-      font-size: 1em;
+      font-size: 20px;
       font-weight: bold;
     }
 }
@@ -42,12 +45,12 @@ header{
 }
 
 .feeder{
-  width: 60%;
+  width: 700px;
   margin:auto auto 20px auto;
 
   .post{
     width:100%;
-    padding:15px;
+    padding:30px;
     border:1px solid $cor-bordas;
     margin-top:30px;
     background:$cor-branca;
@@ -60,7 +63,7 @@ header{
       padding-bottom: 10px;
       .profile-pic{
         float:left;
-        width:70px;
+        width:60px;
         margin-right: 20px;
         img{
           width:100%;
@@ -69,19 +72,22 @@ header{
       }
 
       h2{
-        font-size: 1em;
+        font-size: 16px;
+        color: $cinza-padao-subitulos;
         margin:15px auto 0px auto;
         padding-bottom: 0px;
       }
       span{
-        font-size: 0.80em;
+        font-size: 14px;
+        color: #999;
       }
     }
 
     .post-content{
       p{
-        font-size: 0.85em;
+        font-size: 16px;
         line-height: 17pt;
+        color:$cor-cinza-conteudo;
       }
     }
   }

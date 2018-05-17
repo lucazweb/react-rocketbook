@@ -1,4 +1,6 @@
 import React, { Component, Fragment } from 'react';
+import Header from './components/Header';
+import Post from './components/Post';
 
 export default class App extends Component {
   constructor() {
@@ -21,30 +23,15 @@ export default class App extends Component {
     };
   }
 
-
   render() {
     return (
       <Fragment>
-        <header>
-          <h1>RocketBook</h1>
-        </header>
-
+        <Header />
         <div className="container">
           <div className="feeder">
             {
               this.state.posts.map(post => (
-                <div key={post.id} className="post">
-                  <div className="post-header">
-                    <div className="profile-pic"> <img src={post.foto} alt="" /></div>
-                    <div className="post-info">
-                        <h2>{post.autor}</h2>
-                        <span> há {post.time} min </span>
-                      </div>
-                  </div>
-                  <div className="post-content">
-                    <p>{post.comentario}</p>
-                  </div>
-                </div>
+                <Post data={post}  />
                 ))
             }
           </div>
